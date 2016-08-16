@@ -1,4 +1,5 @@
 <?php
+	define('DEBUG', TRUE);
 	echo "Hello world!!";
 
 	function add($num1,$num2){
@@ -8,7 +9,7 @@
 
 	$resulut = add(1,1);
 	echo $resulut;
-	
+
 	class Robot{
 		private $name;
 
@@ -31,4 +32,20 @@
 
 	$resulut = minus(10,4);
 	echo $resulut;
+
+	//デバック用関数の定義
+	function org_echo($val){
+		if (DEBUG) {
+			echo $val;
+			echo '<br>';
+		}
+
+		function org_var_dump($val){
+			if (DEBUG) {
+				echo '<pre>';
+				var_dump($val);
+				echo '</pre>';
+			}
+		}
+	}
 ?>
