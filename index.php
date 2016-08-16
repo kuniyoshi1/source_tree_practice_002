@@ -9,4 +9,20 @@
 	$resulut = add(1,1);
 	echo $resulut;
 
+	class Robot{
+		private $name;
+
+		function setName($name){
+			$this->name = $name;
+		}
+
+		function getName(){
+			return $this->name;
+		}
+	}
+
+	$robot = new Robot();
+
+	$robot->setName('ドラえもん');
+
 ?>
