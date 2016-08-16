@@ -8,7 +8,7 @@
 
 	$resulut = add(1,1);
 	echo $resulut;
-
+	
 	class Robot{
 		private $name;
 
@@ -22,7 +22,13 @@
 	}
 
 	$robot = new Robot();
-
 	$robot->setName('ドラえもん');
 
+	function minus($num1,$num2){
+		$resulut = $num1 - $num2;
+		return $resulut;
+	}
+
+	$resulut = minus(10,4);
+	echo $resulut;
 ?>
