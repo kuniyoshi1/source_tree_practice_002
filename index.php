@@ -1,5 +1,5 @@
 <?php
-	define('DEBUG', TRUE)
+	define('DEBUG', TRUE);
 	echo "Hello world!!";
 
 	function add($num1,$num2){
@@ -38,6 +38,14 @@
 		if (DEBUG) {
 			echo $val;
 			echo '<br>';
+		}
+
+		function org_var_dump($val){
+			if (DEBUG) {
+				echo '<pre>';
+				var_dump($val);
+				echo '<pre>';
+			}
 		}
 	}
 ?>
